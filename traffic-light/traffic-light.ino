@@ -23,25 +23,25 @@ void loop()
 mylcd.clear();
  analogWrite(yellow,255);
  mylcd.print("Wait");  
- timer(3);       
+ delay(3000);       
  
  mylcd.clear();    
  analogWrite(yellow,0);
  analogWrite(red,255);
  mylcd.print("Stop");
- timer(5); 
+ delay(5000); 
 
  mylcd.clear();
  analogWrite(red,0);
  analogWrite(yellow,255);
  mylcd.print("Wait");
- timer(3);
+ delay(3000);
  
  mylcd.clear();
  analogWrite(yellow,0);
  analogWrite(green,255);
  mylcd.print("Go");
- timer(5);
+ delay(5000);
 }
 
  }
